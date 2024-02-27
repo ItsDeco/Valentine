@@ -1,0 +1,82 @@
+<!DOCTYPE <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>YIPPIE!!!</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <style>
+    
+    body {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .center-gif {
+        text-align: center;
+    }
+
+    .side-gifs {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .left-gif img,
+    .right-gif img {
+        width: 250px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .center-gif img {
+        width: 250px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    #audio {
+        display: none; /* Hide default audio controls */
+    }
+    
+    h1{
+        text-align: center;
+        font-size: 30px;
+        font-weight: 900;
+        color: #000000;
+    }
+    </style>
+
+    <body>
+    
+    <h1> YIPPIE I LOVE YOU MY VALENTINE MWAH !!!! </h1>
+
+    <div class="center-gif">
+        <img src="yippiegif.gif" alt="yippiegif.gif">
+    </div>
+
+    <div class="side-gifs">
+        <div class="left-gif">
+            <img src="happykitty.gif" alt="happykitty.gif">
+        </div>
+        <div class="right-gif">
+            <img src="happykitty2.gif" alt="happykitty2.gif">
+        </div>
+    </div>
+
+    <audio id="audio" autoplay loop>
+        <source src="yippieaudio.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        document.getElementById('audio').play();
+    </script>
+
+    </body>
+</html>
